@@ -1,0 +1,23 @@
+base_seed: 12345
+
+scenarios:
+  - name: A_light
+    lambda: 0.5 # arrival rate λ (on average, λ jobs per unit time)
+    mu: 1.0     # service rate μ 
+    N: 5000    # number of jobs to simulate in each replication
+    R: 20       # number of independent replications
+    tau: 10.0   # SLA threshold (based on time unit of simulation) 
+
+  - name: B_medium
+    lambda: 0.8
+    mu: 1.0
+    N: 5000
+    R: 20
+    tau: 10.0
+
+  - name: C_heavy
+    lambda: 0.95
+    mu: 1.0
+    N: 5000
+    R: 20
+    tau: 10.0
